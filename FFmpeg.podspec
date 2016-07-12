@@ -7,11 +7,8 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'LGPL', :file => 'LICENSE' }
   s.author       = { "Guowei Zou" => "guowzou@gmail.com" } 
   s.requires_arc = false
-  
-  s.platform     = :ios, "8.0"
-
+  #s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/maytrue/FFmpeg-iOS.git", :tag => "3.0"}
-
   s.default_subspec = 'precompiled'
 
   s.subspec 'precompiled' do |ss|
