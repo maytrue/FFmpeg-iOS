@@ -1,16 +1,16 @@
 Pod::Spec.new do |s|
   s.name         = "FFmpeg"
-  s.version      = "2.8.3"
+  s.version      = "3.0.0"
   s.summary      = "FFmpeg static libraries compiled for iOS"
-  s.homepage     = "https://github.com/chrisballinger/FFmpeg-iOS"
+  s.homepage     = "https://github.com/maytrue/FFmpeg-iOS"
   
   s.license      = { :type => 'LGPL', :file => 'LICENSE' }
-  s.author       = { "Chris Ballinger" => "chris@chatsecure.org" } # Podspec maintainer
+  s.author       = { "Guowei Zou" => "guowzou@gmail.com" } 
   s.requires_arc = false
   
   s.platform     = :ios, "8.0"
 
-  s.source       = { :git => "https://github.com/chrisballinger/FFmpeg-iOS.git", :tag => "2.8.3", :submodules => true }
+  s.source       = { :git => "https://github.com/maytrue/FFmpeg-iOS.git", :tag => "3.0"}
 
   s.default_subspec = 'precompiled'
 
