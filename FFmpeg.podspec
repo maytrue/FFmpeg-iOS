@@ -15,10 +15,10 @@ Pod::Spec.new do |s|
   s.default_subspec = 'precompiled'
 
   s.subspec 'precompiled' do |ss|
-    ss.source_files        = 'ffmpeg-ios-static-libs/include/**/*.h'
-    ss.public_header_files = 'ffmpeg-ios-static-libs/include/**/*.h'
-    ss.header_mappings_dir = 'ffmpeg-ios-static-libs/include'
-    ss.vendored_libraries  = 'ffmpeg-ios-static-libs/lib/*.a'
+    ss.source_files        = 'ios-static-libs/include/**/*.h'
+    ss.public_header_files = 'ios-static-libs/include/**/*.h'
+    ss.header_mappings_dir = 'ios-static-libs/include'
+    ss.vendored_libraries  = 'ios-static-libs/lib/*.a'
     ss.libraries = 'avcodec', 'avdevice', 'avfilter', 'avformat', 'avutil', 'swresample', 'swscale', 'iconv', 'z', 'bz2'
   end
 
